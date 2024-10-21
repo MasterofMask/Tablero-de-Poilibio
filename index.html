@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐱</text></svg>">
+    <title>Cifrado Polibius</title>
+    <link  rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+    <div class="container">
+        <div class="info-section">
+            <h2>🫧💭˚ෆ Información🫧💭˚ෆ </h2>
+            <p><span class="info-label">Matriz de botones:</span> Polybius</p>
+            <p><span class="info-label">Nombre:</span> Alma Haniel Rubio Rodriguez</p>
+            <p><span class="info-label">Matrícula:</span> 203495</p>
+            <p><span class="info-label">Carrera:</span> Ing. en Sistemas Computacionales</p>
+        </div>
+    
+        <div class="switch-container">
+            <label class="switch">
+                <input type="checkbox" id="modeSwitch">
+                <span class="slider"></span>
+            </label>
+            Modo: <span id="modeText">Números</span> 🌸
+        </div>
+    
+        <div class="content-wrapper">
+            <!-- Indicador de Segundos (vertical) -->
+            <div class="vertical-label">
+                <span class="vertical-text">SEGUNDOS</span>
+            </div>
+    
+            <!-- Tablero de botones -->
+            <div class="grid-wrapper">
+                <!-- Indicador de Primeros (horizontal) -->
+                <div class="horizontal-label">
+                    <span class="horizontal-text">PRIMEROS</span>
+                </div>
+    
+                <div class="grid-container">
+                    <div id="polybiusGrid" class="grid">
+                        <!-- Los botones del grid se generarán aquí dinámicamente -->
+                    </div>
+                </div>
+            </div>
+    
+            <div class="input-container">
+                <div class="input-group">
+                    <label for="valorCifrado">&#x2728; Valor Cifrado:</label>
+                    <input type="text" id="valorCifrado" readonly>
+                </div>
+                <div class="input-group">
+                    <label for="valorDescifrado">&#x2728; Valor Descifrado:</label>
+                    <input type="text" id="valorDescifrado" readonly>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+
+    <script  src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,214 @@
+/* Estilos generales del cuerpo de la página */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #fff0f5; /* Lavender blush */
+}
+
+/* Sección de información */
+.info-section {
+    margin-top: 30px;
+    background-color: #ffe4e1; /* Misty rose */
+    padding: 20px;
+    border-radius: 15px;
+    border: 2px dashed #ffb6c1; /* Light pink dashed border */
+}
+
+.info-section h2 {
+    color: #ff69b4; /* Hot pink */
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.info-section p {
+    margin: 10px 0;
+    font-size: 16px;
+    color: #ff69b4; /* Hot pink */
+}
+
+.info-label {
+    font-weight: bold;
+    color: #ff1493; /* Deep pink */
+}
+
+
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 182, 193, 0.5); /* Light pink shadow */
+    border: 2px solid #ffb6c1; /* Light pink border */
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+
+/* Wrapper para el contenido principal */
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* Centrar el contenido horizontalmente */
+    align-items: center;     /* Asegura que estén alineados en el centro */
+    gap: 25px;
+}
+/* Contenedor del grid */
+.grid-container {
+    display: inline-block;
+    background-color: #ffe4e1; /* Misty rose */
+    padding: 10px;
+    border-radius: 15px;
+  
+}
+
+/* Estilo de la cuadrícula */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 5px;
+}
+
+/* Estilo de los botones en la cuadrícula */
+.grid button {
+    width: 50px;
+    height: 50px;
+    font-size: 22px;
+    border: none;
+    background-color: #ffc0cb; /* Light pink */
+    color: #fff;
+    cursor: pointer;
+    padding: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.grid button:hover {
+    background-color:#ff69b4; /* Hot pink */
+    transform: scale(1.1);
+}
+
+/* Estilo de los botones deshabilitados */
+.grid button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Indicador "Primeros" en horizontal */
+.horizontal-label {
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff69b4; /* Hot pink  */
+    margin-bottom: 10px;
+    letter-spacing: 15px;
+}
+
+
+/* Indicador "Segundos" en vertical, en forma de columna */
+.vertical-label {
+    writing-mode: vertical-rl;/*Cambia la orientacion  */
+    text-orientation: upright;/*Hace que se vea el texto como bloque  */
+    font-size: 24px;
+    font-weight: bold;
+    color: #ff69b4; /* Hot pink  */
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+    
+}
+
+
+/* Contenedor de los inputs */
+.input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centrar los inputs */
+    gap: 15px;
+}
+
+/* Estilo de los grupos de entrada */
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+    color: #ff69b4; /* Hot pink */
+    font-size: 16px;
+}
+
+.input-group input {
+    width: 220px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #ffb6c1; /* Light pink */
+    border-radius: 10px;
+    font-size: 14px;
+    color: #ff69b4; /* Hot pink */
+    background-color: #fff0f5; /* Lavender blush */
+}
+
+/* Estilos para el interruptor */
+
+/* Contenedor del switch */
+.switch-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-top: 20px ;
+    font-size: 18px;
+    color: #ff69b4; /* Hot pink */
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-right: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ffc0cb; /* Pink */
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ff69b4; /* Hot pink */
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
